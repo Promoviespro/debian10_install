@@ -81,7 +81,7 @@ chmod 775 -R /home/public_html/
 service nginx restart
 
 pip install speedtest-cli
-apt-get install python-pip
+apt-get install -y python-pip
 pip install speedtest-cli
 pip install speedtest-cli –-upgrade
 
