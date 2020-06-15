@@ -35,7 +35,7 @@ firewall-cmd --reload
 #nano /etc/ssh/sshd_config
 service ssh restart
 #apt -y install certbot
-#openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 
 apt -y install nginx nginx-module-geoip nginx-module-geoip-dbg
 systemctl start nginx.service
