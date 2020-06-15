@@ -73,7 +73,7 @@ systemctl restart nginx
 systemctl restart php7.4-fpm
 apt autoclean && apt update && apt upgrade -y && apt -t buster-backports upgrade -y && apt autoremove -y
 
-echo "please reboot system mannualy once and then run below commands"
+
 
 certbot certonly --standalone -d cdn1.promoviesonline.com
 nginx -t
