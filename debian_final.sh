@@ -18,7 +18,7 @@ apt update && apt upgrade -y && apt -t buster-backports upgrade -y
 
 
 apt -t buster-backports -y install nano screen net-tools nload zip unzip htop iotop lshw smartmontools hdparm cpuid dsniff dnsutils iperf3 sysstat rsync git
-nano /etc/resolv.conf; /etc/init.d/networking restart
+#nano /etc/resolv.conf; /etc/init.d/networking restart
 apt -t buster-backports -y upgrade iptables;
 apt -t buster-backports -y install firewalld;
 systemctl enable firewalld.service;
@@ -32,7 +32,7 @@ firewall-cmd --permanent --zone=public --add-port=9399/tcp
 firewall-cmd --reload
 
 
-nano /etc/ssh/sshd_config
+#nano /etc/ssh/sshd_config
 service ssh restart
 apt -y install certbot
 openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
